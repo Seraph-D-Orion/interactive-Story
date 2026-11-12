@@ -68,4 +68,71 @@ inventory = ["iron key"]  # Add the iron key to the player's inventory
 #introduce the scene to the player
 
 
+# Define a function with a creature parameter
+def encounter(creature):
+    print("You hear footsteps approaching...")
+    print(f"A {creature} appears!")
+    print("Prepare yourself!")
+ 
+ 
+# Call the function with different arguments
+encounter("Guard")
+encounter("Ghost")
+ 
+ 
+ 
+def encounter(creature):
+ 
+    print(f"\nA {creature} appears!")
+ 
+    # Add selection to respond to the creature
+    if creature == "Guard":
+        print("The guard draws their sword!")
+ 
+    elif creature == "Ghost":
+        print("The ghost floats towards you!")
+    elif creature == "draugr":
+        print("the draugr wakes up and slowly walks towards you")
+# Test each possible encounter
+encounter("Guard")
+encounter("Ghost")
+encounter("draugr")
+
+
+# ==========================================
+# ESCAPE THE CASTLE - CORRIDOR ENCOUNTER
+# ==========================================
+ 
+import random
+ 
+# Define a function to describe an encounter
+def encounter(creature):
+ 
+        # Different outcomes depending on the creature
+    if creature == "Guard":
+        print("The Guard draws their sword")
+    elif creature == "Ghost":
+        print("The ghost floats towards")
+    elif creature == "Sphinx":
+        print("the Sphinx wakes up and slowly walks towards you")
+ 
+    print(f"A {creature} appears!!")
+ 
+# Define the corridor scene
+def corridor():
+    print("You walk down a dark castle corridor.")
+    print("You hear a strange noise ahead...")
+     # Create a list of possible encounters
+    creatures = ["Guard", "Ghost", "Sphinx"]
+   
+    # Randomly select a creature
+    random_creature = random.choice(creatures)
+ 
+     # Pass the chosen creature into the encounter function
+    encounter(random_creature)
+ 
+# Start the scene
+corridor()
+
+
 
