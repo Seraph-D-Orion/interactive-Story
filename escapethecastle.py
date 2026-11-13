@@ -19,7 +19,7 @@
 # print(f"Class: {character_class}")
 # print(f"Health: {health}")
 # print(f"Gold: {gold}")
-# print(f"Has Key: {haskey}")
+# print(f"Has key: {has_key}")
  
 # #Begin the story
 # print(f"\n{player_name}, you wake up in a dark spooky castle.")
@@ -32,9 +32,10 @@
 # ESCAPE THE CASTLE - SCENE 1: THE CELL
 # # ==========================================
 inventory = []
- 
+has_key = False
 def cell():
     global has_key
+   
     # Introduce the scene to the player
     print("You wake up in a dark castle cell.")
     print("You can see a door, a window and an old bed")
